@@ -1,5 +1,0 @@
-
-…python:S2208"GImport only needed names or import the module and then use its members.(÷²´üJ$8273a4af-659a-4bc9-a30e-7aef810addd9
-›python:S5890t"XReplace the type hint "Schema" with "Optional[Schema]" or don't assign "None" to "items"(ÖÏÖÙøÿÿÿÿJ$c12f4ddb-1a47-4cc5-893c-82502797b65d
-bpython:S125ž"Remove this commented out code.(æªñÙýÿÿÿÿJ$ea0c9074-688c-419f-abc5-5beaccbec2ff
-bpython:S125«"Remove this commented out code.(æªñÙýÿÿÿÿJ$a7c211df-19e9-44bc-a595-376a72b35032
