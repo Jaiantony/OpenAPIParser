@@ -1,0 +1,15 @@
+
+Hpython:S1066è"/Merge this if statement with the enclosing one.(¼É—ì
+Tpython:S57549"<Specify an exception class to catch or reraise the exception(ˆÊÉ·
+Gpython:S1172".Remove the unused function parameter "schema".(Äøù
+Gpython:S1172ñ".Remove the unused function parameter "schema".(Äøù
+Opython:S1172î"1Remove the unused function parameter "validator".(ŒáÑýÿÿÿÿÿ
+Hpython:S1172ï"*Remove the unused function parameter "ro".(±è¯ÿÿÿÿÿ
+Cpython:S1172ø"*Remove the unused function parameter "wo".(ËÅËï
+Opython:S1172÷"1Remove the unused function parameter "validator".(ŒáÑýÿÿÿÿÿ
+Gpython:S1172ú".Remove the unused function parameter "schema".(Äøù
+Gpython:S1172ƒ".Remove the unused function parameter "schema".(Äøù
+Epython:S1172"-Remove the unused function parameter "value".(¥£‡<
+Opython:S1172€"1Remove the unused function parameter "validator".(ŒáÑýÿÿÿÿÿ
+Ipython:S1172‚"0Remove the unused function parameter "instance".(¦Êü˜
+`python:S1763†"GDelete this unreachable code or refactor the code to make it reachable.(“À™á
