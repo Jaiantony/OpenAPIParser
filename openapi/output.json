@@ -1,574 +1,574 @@
 {
-  'version': '3.0.3',
-  'info': {
-    'title': 'Swagger Petstore - OpenAPI 3.0',
-    'description': "This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about\nSwagger at [https://swagger.io](https://swagger.io). In the third iteration of the pet store, we've switched to the design first approach!\nYou can now help us improve the API whether it's by making changes to the definition itself or to the code.\nThat way, with time, we can improve the API in general, and expose some of the new features in OAS3.\n\n_If you're looking for the Swagger 2.0/OAS 2.0 version of Petstore, then click [here](https://editor.swagger.io/?url=https://petstore.swagger.io/v2/swagger.yaml). Alternatively, you can load via the `Edit > Load Petstore OAS 2.0` menu option!_\n\nSome useful links:\n- [The Pet Store repository](https://github.com/swagger-api/swagger-petstore)\n- [The source API definition for the Pet Store](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)",
-    'version': '1.0.11',
-    'terms_of_service': 'http://swagger.io/terms/',
-    'contact': {
-      'email': 'apiteam@swagger.io'
+  "version": "3.0.3",
+  "info": {
+    "title": "Swagger Petstore - OpenAPI 3.0",
+    "description": "This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about\nSwagger at [https://swagger.io](https://swagger.io). In the third iteration of the pet store, we've switched to the design first approach!\nYou can now help us improve the API whether it's by making changes to the definition itself or to the code.\nThat way, with time, we can improve the API in general, and expose some of the new features in OAS3.\n\n_If you're looking for the Swagger 2.0/OAS 2.0 version of Petstore, then click [here](https://editor.swagger.io/?url=https://petstore.swagger.io/v2/swagger.yaml). Alternatively, you can load via the `Edit > Load Petstore OAS 2.0` menu option!_\n\nSome useful links:\n- [The Pet Store repository](https://github.com/swagger-api/swagger-petstore)\n- [The source API definition for the Pet Store](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)",
+    "version": "1.0.11",
+    "terms_of_service": "http://swagger.io/terms/",
+    "contact": {
+      "email": "apiteam@swagger.io"
     },
-    'license': {
-      'name': 'Apache 2.0',
-      'url': 'http://www.apache.org/licenses/LICENSE-2.0.html'
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    'external_docs': None
+    "external_docs": null
   },
-  'servers': [
+  "servers": [
     {
-      'url': 'https://petstore3.swagger.io/api/v3'
+      "url": "https://petstore3.swagger.io/api/v3"
     }
   ],
-  'externalDocs': {
-    'description': 'Find out more about Swagger',
-    'url': 'http://swagger.io'
+  "externalDocs": {
+    "description": "Find out more about Swagger",
+    "url": "http://swagger.io"
   },
-  'tags': [
+  "tags": [
     {
-      'name': 'pet',
-      'description': 'Everything about your Pets',
-      'external_docs': {
-        'description': 'Find out more',
-        'url': 'http://swagger.io'
+      "name": "pet",
+      "description": "Everything about your Pets",
+      "external_docs": {
+        "description": "Find out more",
+        "url": "http://swagger.io"
       }
     },
     {
-      'name': 'store',
-      'description': 'Access to Petstore orders',
-      'external_docs': {
-        'description': 'Find out more about our store',
-        'url': 'http://swagger.io'
+      "name": "store",
+      "description": "Access to Petstore orders",
+      "external_docs": {
+        "description": "Find out more about our store",
+        "url": "http://swagger.io"
       }
     },
     {
-      'name': 'user',
-      'description': 'Operations about user'
+      "name": "user",
+      "description": "Operations about user"
     }
   ],
-  'paths': {
-    'url': '/user/{username}',
-    'summary': None,
-    'description': None,
-    'operations': [
+  "paths": {
+    "url": "/user/{username}",
+    "summary": null,
+    "description": null,
+    "operations": [
       {
-        'method': 'get',
-        'tags': [
-          'user'
+        "method": "get",
+        "tags": [
+          "user"
         ],
-        'summary': 'Get user by user name',
-        'description': '',
-        'operation_id': 'getUserByName',
-        'request_body': None,
-        'responses': {
-          '200': {
-            'description': 'successful operation',
-            'content': {
-              'application/json': {
-                'schema': {
-                  '$ref': '#/components/schemas/User'
+        "summary": "Get user by user name",
+        "description": "",
+        "operation_id": "getUserByName",
+        "request_body": null,
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
                 }
               },
-              'application/xml': {
-                'schema': {
-                  '$ref': '#/components/schemas/User'
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
                 }
               }
             }
           },
-          '400': {
-            'description': 'Invalid username supplied'
+          "400": {
+            "description": "Invalid username supplied"
           },
-          '404': {
-            'description': 'User not found'
+          "404": {
+            "description": "User not found"
           }
         },
-        'security': [
+        "security": [
           
         ],
-        'parameters': [
+        "parameters": [
           {
-            'name': 'username',
-            'in': 'path',
-            'description': 'The name that needs to be fetched. Use user1 for testing. ',
-            'required': True,
-            'schema': {
-              'type': 'string'
+            "name": "username",
+            "in": "path",
+            "description": "The name that needs to be fetched. Use user1 for testing. ",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ]
       },
       {
-        'method': 'put',
-        'tags': [
-          'user'
+        "method": "put",
+        "tags": [
+          "user"
         ],
-        'summary': 'Update user',
-        'description': 'This can only be done by the logged in user.',
-        'operation_id': 'updateUser',
-        'request_body': {
-          'description': 'Update an existent user in the store',
-          'content': {
-            'application/json': {
-              'schema': {
-                '$ref': '#/components/schemas/User'
+        "summary": "Update user",
+        "description": "This can only be done by the logged in user.",
+        "operation_id": "updateUser",
+        "request_body": {
+          "description": "Update an existent user in the store",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
               }
             },
-            'application/xml': {
-              'schema': {
-                '$ref': '#/components/schemas/User'
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
               }
             },
-            'application/x-www-form-urlencoded': {
-              'schema': {
-                '$ref': '#/components/schemas/User'
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
               }
             }
           }
         },
-        'responses': {
-          'default': {
-            'description': 'successful operation'
+        "responses": {
+          "default": {
+            "description": "successful operation"
           }
         },
-        'security': [
+        "security": [
           
         ],
-        'parameters': [
+        "parameters": [
           {
-            'name': 'username',
-            'in': 'path',
-            'description': 'name that need to be deleted',
-            'required': True,
-            'schema': {
-              'type': 'string'
+            "name": "username",
+            "in": "path",
+            "description": "name that need to be deleted",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ]
       },
       {
-        'method': 'delete',
-        'tags': [
-          'user'
+        "method": "delete",
+        "tags": [
+          "user"
         ],
-        'summary': 'Delete user',
-        'description': 'This can only be done by the logged in user.',
-        'operation_id': 'deleteUser',
-        'request_body': None,
-        'responses': {
-          '400': {
-            'description': 'Invalid username supplied'
+        "summary": "Delete user",
+        "description": "This can only be done by the logged in user.",
+        "operation_id": "deleteUser",
+        "request_body": null,
+        "responses": {
+          "400": {
+            "description": "Invalid username supplied"
           },
-          '404': {
-            'description': 'User not found'
+          "404": {
+            "description": "User not found"
           }
         },
-        'security': [
+        "security": [
           
         ],
-        'parameters': [
+        "parameters": [
           {
-            'name': 'username',
-            'in': 'path',
-            'description': 'The name that needs to be deleted',
-            'required': True,
-            'schema': {
-              'type': 'string'
+            "name": "username",
+            "in": "path",
+            "description": "The name that needs to be deleted",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ]
       }
     ],
-    'parameters': [
+    "parameters": [
       {
-        'name': 'username',
-        'in': 'path',
-        'description': 'The name that needs to be deleted',
-        'required': True,
-        'schema': {
-          'type': 'string'
+        "name": "username",
+        "in": "path",
+        "description": "The name that needs to be deleted",
+        "required": true,
+        "schema": {
+          "type": "string"
         }
       }
     ],
-    'extensions': None
+    "extensions": null
   },
-  'schemas': {
-    'Order': {
-      'name': 'Order',
-      'schema': {
-        'id': {
-          'name': 'id',
-          'type': 'integer',
-          'format': 'int64',
-          'description': '',
-          'example': 10,
-          'required': False,
-          'min': None,
-          'max': None
+  "schemas": {
+    "Order": {
+      "name": "Order",
+      "schema": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "format": "int64",
+          "description": "",
+          "example": 10,
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'petId': {
-          'name': 'petId',
-          'type': 'integer',
-          'format': 'int64',
-          'description': '',
-          'example': 198772,
-          'required': False,
-          'min': None,
-          'max': None
+        "petId": {
+          "name": "petId",
+          "type": "integer",
+          "format": "int64",
+          "description": "",
+          "example": 198772,
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'quantity': {
-          'name': 'quantity',
-          'type': 'integer',
-          'format': 'int32',
-          'description': '',
-          'example': 7,
-          'required': False,
-          'min': None,
-          'max': None
+        "quantity": {
+          "name": "quantity",
+          "type": "integer",
+          "format": "int32",
+          "description": "",
+          "example": 7,
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'shipDate': {
-          'name': 'shipDate',
-          'type': 'string',
-          'format': 'date-time',
-          'description': '',
-          'example': '',
-          'required': False,
-          'min': None,
-          'max': None
+        "shipDate": {
+          "name": "shipDate",
+          "type": "string",
+          "format": "date-time",
+          "description": "",
+          "example": "",
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'status': {
-          'name': 'status',
-          'type': 'string',
-          'format': '',
-          'description': 'Order Status',
-          'example': 'approved',
-          'required': False,
-          'min': None,
-          'max': None
+        "status": {
+          "name": "status",
+          "type": "string",
+          "format": "",
+          "description": "Order Status",
+          "example": "approved",
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'complete': {
-          'name': 'complete',
-          'type': 'boolean',
-          'format': '',
-          'description': '',
-          'example': '',
-          'required': False,
-          'min': None,
-          'max': None
+        "complete": {
+          "name": "complete",
+          "type": "boolean",
+          "format": "",
+          "description": "",
+          "example": "",
+          "required": false,
+          "min": null,
+          "max": null
         }
       }
     },
-    'Customer': {
-      'name': 'Customer',
-      'schema': {
-        'id': {
-          'name': 'id',
-          'type': 'integer',
-          'format': 'int64',
-          'description': '',
-          'example': 100000,
-          'required': False,
-          'min': None,
-          'max': None
+    "Customer": {
+      "name": "Customer",
+      "schema": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "format": "int64",
+          "description": "",
+          "example": 100000,
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'username': {
-          'name': 'username',
-          'type': 'string',
-          'format': '',
-          'description': '',
-          'example': 'fehguy',
-          'required': False,
-          'min': None,
-          'max': None
+        "username": {
+          "name": "username",
+          "type": "string",
+          "format": "",
+          "description": "",
+          "example": "fehguy",
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'address': {
-          'name': 'address',
-          'type': 'array',
-          'format': '',
-          'description': '',
-          'example': '',
-          'required': False,
-          'min': None,
-          'max': None
+        "address": {
+          "name": "address",
+          "type": "array",
+          "format": "",
+          "description": "",
+          "example": "",
+          "required": false,
+          "min": null,
+          "max": null
         }
       }
     },
-    'Address': {
-      'name': 'Address',
-      'schema': {
-        'street': {
-          'name': 'street',
-          'type': 'string',
-          'format': '',
-          'description': '',
-          'example': '437 Lytton',
-          'required': False,
-          'min': None,
-          'max': None
+    "Address": {
+      "name": "Address",
+      "schema": {
+        "street": {
+          "name": "street",
+          "type": "string",
+          "format": "",
+          "description": "",
+          "example": "437 Lytton",
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'city': {
-          'name': 'city',
-          'type': 'string',
-          'format': '',
-          'description': '',
-          'example': 'Palo Alto',
-          'required': False,
-          'min': None,
-          'max': None
+        "city": {
+          "name": "city",
+          "type": "string",
+          "format": "",
+          "description": "",
+          "example": "Palo Alto",
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'state': {
-          'name': 'state',
-          'type': 'string',
-          'format': '',
-          'description': '',
-          'example': 'CA',
-          'required': False,
-          'min': None,
-          'max': None
+        "state": {
+          "name": "state",
+          "type": "string",
+          "format": "",
+          "description": "",
+          "example": "CA",
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'zip': {
-          'name': 'zip',
-          'type': 'string',
-          'format': '',
-          'description': '',
-          'example': '94301',
-          'required': False,
-          'min': None,
-          'max': None
+        "zip": {
+          "name": "zip",
+          "type": "string",
+          "format": "",
+          "description": "",
+          "example": "94301",
+          "required": false,
+          "min": null,
+          "max": null
         }
       }
     },
-    'Category': {
-      'name': 'Category',
-      'schema': {
-        'id': {
-          'name': 'id',
-          'type': 'integer',
-          'format': 'int64',
-          'description': '',
-          'example': 1,
-          'required': False,
-          'min': None,
-          'max': None
+    "Category": {
+      "name": "Category",
+      "schema": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "format": "int64",
+          "description": "",
+          "example": 1,
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'name': {
-          'name': 'name',
-          'type': 'string',
-          'format': '',
-          'description': '',
-          'example': 'Dogs',
-          'required': False,
-          'min': None,
-          'max': None
+        "name": {
+          "name": "name",
+          "type": "string",
+          "format": "",
+          "description": "",
+          "example": "Dogs",
+          "required": false,
+          "min": null,
+          "max": null
         }
       }
     },
-    'User': {
-      'name': 'User',
-      'schema': {
-        'id': {
-          'name': 'id',
-          'type': 'integer',
-          'format': 'int64',
-          'description': '',
-          'example': 10,
-          'required': False,
-          'min': None,
-          'max': None
+    "User": {
+      "name": "User",
+      "schema": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "format": "int64",
+          "description": "",
+          "example": 10,
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'username': {
-          'name': 'username',
-          'type': 'string',
-          'format': '',
-          'description': '',
-          'example': 'theUser',
-          'required': False,
-          'min': None,
-          'max': None
+        "username": {
+          "name": "username",
+          "type": "string",
+          "format": "",
+          "description": "",
+          "example": "theUser",
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'firstName': {
-          'name': 'firstName',
-          'type': 'string',
-          'format': '',
-          'description': '',
-          'example': 'John',
-          'required': False,
-          'min': None,
-          'max': None
+        "firstName": {
+          "name": "firstName",
+          "type": "string",
+          "format": "",
+          "description": "",
+          "example": "John",
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'lastName': {
-          'name': 'lastName',
-          'type': 'string',
-          'format': '',
-          'description': '',
-          'example': 'James',
-          'required': False,
-          'min': None,
-          'max': None
+        "lastName": {
+          "name": "lastName",
+          "type": "string",
+          "format": "",
+          "description": "",
+          "example": "James",
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'email': {
-          'name': 'email',
-          'type': 'string',
-          'format': '',
-          'description': '',
-          'example': 'john@email.com',
-          'required': False,
-          'min': None,
-          'max': None
+        "email": {
+          "name": "email",
+          "type": "string",
+          "format": "",
+          "description": "",
+          "example": "john@email.com",
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'password': {
-          'name': 'password',
-          'type': 'string',
-          'format': '',
-          'description': '',
-          'example': '12345',
-          'required': False,
-          'min': None,
-          'max': None
+        "password": {
+          "name": "password",
+          "type": "string",
+          "format": "",
+          "description": "",
+          "example": "12345",
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'phone': {
-          'name': 'phone',
-          'type': 'string',
-          'format': '',
-          'description': '',
-          'example': '12345',
-          'required': False,
-          'min': None,
-          'max': None
+        "phone": {
+          "name": "phone",
+          "type": "string",
+          "format": "",
+          "description": "",
+          "example": "12345",
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'userStatus': {
-          'name': 'userStatus',
-          'type': 'integer',
-          'format': 'int32',
-          'description': 'User Status',
-          'example': 1,
-          'required': False,
-          'min': None,
-          'max': None
+        "userStatus": {
+          "name": "userStatus",
+          "type": "integer",
+          "format": "int32",
+          "description": "User Status",
+          "example": 1,
+          "required": false,
+          "min": null,
+          "max": null
         }
       }
     },
-    'Tag': {
-      'name': 'Tag',
-      'schema': {
-        'id': {
-          'name': 'id',
-          'type': 'integer',
-          'format': 'int64',
-          'description': '',
-          'example': '',
-          'required': False,
-          'min': None,
-          'max': None
+    "Tag": {
+      "name": "Tag",
+      "schema": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "format": "int64",
+          "description": "",
+          "example": "",
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'name': {
-          'name': 'name',
-          'type': 'string',
-          'format': '',
-          'description': '',
-          'example': '',
-          'required': False,
-          'min': None,
-          'max': None
+        "name": {
+          "name": "name",
+          "type": "string",
+          "format": "",
+          "description": "",
+          "example": "",
+          "required": false,
+          "min": null,
+          "max": null
         }
       }
     },
-    'Pet': {
-      'name': 'Pet',
-      'schema': {
-        'id': {
-          'name': 'id',
-          'type': 'integer',
-          'format': 'int64',
-          'description': '',
-          'example': 10,
-          'required': False,
-          'min': None,
-          'max': None
+    "Pet": {
+      "name": "Pet",
+      "schema": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "format": "int64",
+          "description": "",
+          "example": 10,
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'name': {
-          'name': 'name',
-          'type': 'string',
-          'format': '',
-          'description': '',
-          'example': 'doggie',
-          'required': True,
-          'min': None,
-          'max': None
+        "name": {
+          "name": "name",
+          "type": "string",
+          "format": "",
+          "description": "",
+          "example": "doggie",
+          "required": true,
+          "min": null,
+          "max": null
         },
-        'category': {
-          'name': 'category',
-          'type': '',
-          'format': '',
-          'description': '',
-          'example': '',
-          'required': False,
-          'min': None,
-          'max': None
+        "category": {
+          "name": "category",
+          "type": "",
+          "format": "",
+          "description": "",
+          "example": "",
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'photoUrls': {
-          'name': 'photoUrls',
-          'type': 'array',
-          'format': '',
-          'description': '',
-          'example': '',
-          'required': True,
-          'min': None,
-          'max': None
+        "photoUrls": {
+          "name": "photoUrls",
+          "type": "array",
+          "format": "",
+          "description": "",
+          "example": "",
+          "required": true,
+          "min": null,
+          "max": null
         },
-        'tags': {
-          'name': 'tags',
-          'type': 'array',
-          'format': '',
-          'description': '',
-          'example': '',
-          'required': False,
-          'min': None,
-          'max': None
+        "tags": {
+          "name": "tags",
+          "type": "array",
+          "format": "",
+          "description": "",
+          "example": "",
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'status': {
-          'name': 'status',
-          'type': 'string',
-          'format': '',
-          'description': 'pet status in the store',
-          'example': '',
-          'required': False,
-          'min': None,
-          'max': None
+        "status": {
+          "name": "status",
+          "type": "string",
+          "format": "",
+          "description": "pet status in the store",
+          "example": "",
+          "required": false,
+          "min": null,
+          "max": null
         }
       }
     },
-    'ApiResponse': {
-      'name': 'ApiResponse',
-      'schema': {
-        'code': {
-          'name': 'code',
-          'type': 'integer',
-          'format': 'int32',
-          'description': '',
-          'example': '',
-          'required': False,
-          'min': None,
-          'max': None
+    "ApiResponse": {
+      "name": "ApiResponse",
+      "schema": {
+        "code": {
+          "name": "code",
+          "type": "integer",
+          "format": "int32",
+          "description": "",
+          "example": "",
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'type': {
-          'name': 'type',
-          'type': 'string',
-          'format': '',
-          'description': '',
-          'example': '',
-          'required': False,
-          'min': None,
-          'max': None
+        "type": {
+          "name": "type",
+          "type": "string",
+          "format": "",
+          "description": "",
+          "example": "",
+          "required": false,
+          "min": null,
+          "max": null
         },
-        'message': {
-          'name': 'message',
-          'type': 'string',
-          'format': '',
-          'description': '',
-          'example': '',
-          'required': False,
-          'min': None,
-          'max': None
+        "message": {
+          "name": "message",
+          "type": "string",
+          "format": "",
+          "description": "",
+          "example": "",
+          "required": false,
+          "min": null,
+          "max": null
         }
       }
     }
